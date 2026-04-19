@@ -36,7 +36,7 @@ export default function Register() {
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label>Full Name</label>
-            <input type="text" placeholder="Shruti Kumari" value={name}
+            <input type="text" placeholder="Full Name" value={name}
               onChange={e => setName(e.target.value)} required />
           </div>
           <div className="form-group">
