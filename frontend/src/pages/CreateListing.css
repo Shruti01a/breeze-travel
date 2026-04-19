@@ -1,0 +1,22 @@
+.create-page { padding-top: 100px; padding-bottom: 60px; max-width: 760px; }
+.create-title { font-family: var(--font-display); font-size: 2rem; margin-bottom: 6px; }
+.create-sub { color: var(--gray); font-size: 15px; margin-bottom: 36px; }
+.create-form { display: flex; flex-direction: column; gap: 0; }
+.form-section { border: 1.5px solid var(--border); border-radius: 16px; padding: 28px; margin-bottom: 20px; }
+.form-section h3 { font-size: 17px; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-row.three { grid-template-columns: 1fr 1fr 1fr; }
+.form-group textarea { resize: vertical; min-height: 100px; }
+.amenities-picker { display: flex; flex-wrap: wrap; gap: 10px; }
+.amenity-toggle {
+  padding: 8px 16px; border-radius: 20px;
+  border: 1.5px solid var(--border); background: white;
+  font-size: 13px; font-weight: 500; color: var(--dark);
+  transition: all 0.2s;
+}
+.amenity-toggle:hover { border-color: var(--dark); }
+.amenity-toggle.selected { background: var(--dark); color: white; border-color: var(--dark); }
+.create-btn { padding: 16px; font-size: 16px; border-radius: 12px; }
+@media (max-width: 600px) {
+  .form-row, .form-row.three { grid-template-columns: 1fr; }
+}
